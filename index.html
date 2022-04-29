@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo/calculadora.css">
+    
+</head>
+<body>
+    <section id="calculadora">
+        <section class="tela-calculadora">
+            <input disabled="disabled" placeholder="0" type="text" name="" id="tela">
+            
+        </section>
+
+        <section class="teclado-numerico">
+
+            <input  onclick="calcular('acao', 'c')" class="botoes botao-horizontal" type="button" value="C">
+            <input onclick="calcular('acao', '/')" class="botoes" type="button" value="/">
+            <input onclick="calcular('acao', '*')" class="botoes" type="button" value="x">
+
+            <input onclick="calcular('valor', '7')"  class="botoes" type="button" value="7">
+            <input onclick="calcular('valor', '8')"  class="botoes" type="button" value="8">
+            <input onclick="calcular('valor', '9')"  class="botoes" type="button" value="9">
+            <input onclick="calcular('acao', '-')" class="botoes" type="button" value="-">
+
+            <input onclick="calcular('valor', '4')"  class="botoes" type="button" value="4">
+            <input onclick="calcular('valor', '5')"  class="botoes" type="button" value="5">
+            <input onclick="calcular('valor', '6')"  class="botoes" type="button" value="6">
+            <input onclick="calcular('acao', '+')" class="botoes" type="button" value="+">   
+
+
+            <input onclick="calcular('valor', '1')" class="botoes" type="button" value="1">
+            <input onclick="calcular('valor', '2')"  class="botoes" type="button" value="2">
+            <input onclick="calcular('valor', '3')"  class="botoes" type="button" value="3">
+            <input onclick="calcular('valor', '3.14')" class="botoes" type="button" value="π">
+
+            <input onclick="calcular('valor', '0')"  class="botoes  " type="button" value="0">
+            <input onclick="calcular('acao', '.')" class="botoes" type="button" value=".">
+            <input onclick="calcular('acao', '=')" class="botoes botao-horizontal" type="button" value="=">
+            
+
+
+        </section>
+
+    </section>
+    <script src="calculadora.js"></script>
+
+</body>
+</html>
